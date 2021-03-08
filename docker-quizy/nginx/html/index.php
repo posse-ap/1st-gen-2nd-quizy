@@ -121,6 +121,7 @@ $stmt = $dbh->query("SELECT * FROM questions WHERE id LIKE '%" . $_POST["id"] . 
                 // " SELECT * FROM contacts  WHERE id LIKE '%" . $_POST["search_name"] . "%' "
 $result = $stmt->fetchAll();
 var_dump($result);
+$result = var_dump($result);
 	
 echo $_SERVER['QUERY_STRING'];
 ?>
@@ -225,7 +226,7 @@ echo $_SERVER['QUERY_STRING'];
             </ul>
         </div>
     </div>
-    <script src="quizy.js"></script>
+    
     <script>
         // URLのパラメータを取得
 var urlParam = location.search.substring(1);
@@ -255,6 +256,11 @@ var urlParam = location.search.substring(1);
     document.getElementById("tokyo_title").style.display="none";
    }
  }
+
+
+
+var 
     </script>
+    <script src="quizy.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 version: "3"
 services:
   db:
-    # build: ./db/Docker # Dockerfileの置き場所を指定　Dockerfileから
+    # build: ./db/Docker # Dockerfileの置き場所を指定 Dockerfileから
     image: mysql:5.7
     volumes:
       - ./db/mysql:/var/lib/mysql
@@ -31,4 +31,3 @@ services:
     restart: always
     ports: ["8080:80"]
     depends_on: ["php"]
-    # 
